@@ -52,8 +52,9 @@ var favorites = [
   [ "Social",
     [
       ["Whatsapp" , "https://web.whatsapp.com/", "wa"],
-      ["Facebook" , "https://www.facebook.com/" , "fb"],
+      ["Instagram" , "https://www.instagram.com/", "insta"],
       ["Twitter" , "https://twitter.com/", "twi"],
+      ["Facebook" , "https://www.facebook.com/" , "fb"],
       ["Hangouts" , "http://hangouts.google.com", "hang"]
     ]
   ],
