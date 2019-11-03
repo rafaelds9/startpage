@@ -44,6 +44,8 @@ var favorites = [
     [
       ["Gmail" , "https://mail.google.com/mail/u/0/#inbox", "gm"],
       ["Github" , "https://github.com/", "gh"],
+      ["SUAP" , "https://suap.ifpb.edu.br", "sp"],
+      ["IFPB" , "https://ifpb.edu.br/", "if"],
       ["ResearchGate" , "https://www.researchgate.net/", "rg"]
     ]
   ],
