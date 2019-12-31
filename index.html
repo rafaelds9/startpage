@@ -3,6 +3,9 @@
 <script>
   const CONFIG = {
     /**
+     * 
+     * file:///home/rafael/Projetos/Pessoais/startpage/index.html
+     * 
      * The category, name, key, url, search path and color for your commands.
      * If none of the specified keys are matched, the '*' key is used.
      * Commands without a category don't show up in the help menu.
@@ -33,19 +36,10 @@
       },
       {
         category: 'Work',
-        name: 'Keep',
-        key: 'k',
-        url: 'https://keep.google.com',
-        search: '/#search/text={}',
+        name: 'Gmail',
+        key: 'mail',
+        url: 'https://mail.google.com',
         color: 'linear-gradient(135deg, #fca550, #fcd050)',
-      },
-      {
-        category: 'Lurk',
-        name: 'Hunt',
-        key: 'p',
-        url: 'https://www.producthunt.com',
-        search: '/search?q={}',
-        color: 'linear-gradient(135deg, #da552f, #da802f)',
       },
       {
         category: 'Lurk',
@@ -57,35 +51,27 @@
       },
       {
         category: 'Lurk',
-        name: 'Unsplash',
-        key: 'u',
-        url: 'https://unsplash.com/new',
-        search: '/search/{}',
+        name: 'Twitter',
+        key: 't',
+        url: 'https://www.twitter.com',
+        search: '/search?q={}',
+        color: 'linear-gradient(135deg, #da552f, #da802f)',
+      },
+      {
+        category: 'Lurk',
+        name: 'Instagram',
+        key: 'i',
+        url: 'https://instagram.com',
         color: '#000',
       },
+
       {
-        category: 'Listen',
-        name: 'Hypem',
-        key: 'h',
-        url: 'https://hypem.com/popular',
-        search: '/search/{}',
-        color: 'linear-gradient(135deg, #83c441, #62c441)',
-      },
-      {
-        category: 'Listen',
-        name: 'Line Radio',
-        key: 'l',
-        url: 'https://linerad.io',
-        search: '/#{}',
-        color: 'linear-gradient(135deg, #a29bfe, #bb9bfe)',
-      },
-      {
-        category: 'Listen',
-        name: 'SoundCloud',
-        key: 's',
-        url: 'https://soundcloud.com/discover',
-        search: '/search?q={}',
-        color: 'linear-gradient(135deg, #ff8800, #ffc800)',
+        category: 'Watch',
+        name: 'YouTube',
+        key: 'y',
+        url: 'https://youtube.com/feed/subscriptions',
+        search: '/results?search_query={}',
+        color: 'linear-gradient(135deg, #cd201f, #cd4c1f)',
       },
       {
         category: 'Watch',
@@ -97,22 +83,15 @@
       },
       {
         category: 'Watch',
-        name: 'Twitch',
-        key: 't',
-        url: 'https://www.twitch.tv/directory/following',
+        name: 'Prime Video',
+        key: 'p',
+        url: 'https://www.primevideo.com/',
+        search: '/search/ref=atv_nb_sr?phrase={}',
         color: 'linear-gradient(135deg, #6441a5, #7d41a5)',
       },
       {
-        category: 'Watch',
-        name: 'YouTube',
-        key: 'y',
-        url: 'https://youtube.com/feed/subscriptions',
-        search: '/results?search_query={}',
-        color: 'linear-gradient(135deg, #cd201f, #cd4c1f)',
-      },
-      {
         category: 'Learn',
-        name: 'Academy',
+        name: 'Khan Academy',
         key: 'a',
         url: 'https://www.khanacademy.org',
         search: '/search?page_search_query={}',
@@ -128,19 +107,26 @@
       },
       {
         category: 'Learn',
-        name: 'Egghead',
-        key: 'e',
-        url: 'https://egghead.io',
-        search: '/search?q={}',
+        name: 'Duolingo',
+        key: 'dl',
+        url: 'https://www.duolingo.com/learn',
         color: 'linear-gradient(135deg, #171C23, #171923)',
       },
       {
         category: 'Download',
-        name: 'Bay',
+        name: 'The Pirate Bay',
         key: 'b',
         url: 'https://thepiratebay.org',
         search: '/search/{}',
         color: 'linear-gradient(135deg, #d2b9a6, #d2c4a6)',
+      },
+      {
+        category: 'Download',
+        name: '1337x',
+        key: 'x',
+        url: 'https://1337x.to',
+        search: '/search/{}',
+        color: 'linear-gradient(135deg, #07606e, #07466e)',
       },
       {
         category: 'Download',
@@ -149,14 +135,6 @@
         url: 'https://yts.am/browse-movies/all/1080p/all/7/latest',
         search: '/browse-movies/{}',
         color: 'linear-gradient(135deg, #2f2f2f, #373737)',
-      },
-      {
-        category: 'Download',
-        name: '7digital',
-        key: '7',
-        url: 'https://us.7digital.com',
-        search: '/search?q={}',
-        color: 'linear-gradient(135deg, #07606e, #07466e)',
       },
     ],
 
@@ -183,13 +161,15 @@
     /**
      * Default search suggestions for the specified queries.
      */
+
+     /**
     defaultSuggestions: {
       g: ['g/issues', 'g/pulls', 'gist.github.com'],
       l: ['l/#electronic+chill', 'l/#focus+instrumental', 'l/#piano+sleep'],
       r: ['r/r/unixporn', 'r/r/startpages', 'r/r/webdev', 'r/r/technology'],
       s: ['s/you/likes', 's/discover/the-upload'],
     },
-
+    **/
     /**
      * Instantly redirect when a key is matched. Put a space before any other
      * queries to prevent unwanted redirects.
@@ -568,7 +548,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="noindex" />
-<title>~</title>
+<title>Startpage</title>
 
 <div class="center"><time class="clock" id="clock"></time></div>
 
