@@ -1,80 +1,57 @@
-# Startpage [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+# Tilde
 
-## The History/Reasons of the project
+Inspired by [/r/startpages](https://www.reddit.com/r/startpages)—the idea is to
+have a homepage for your browser that is functional and sexy.
 
-This is a small project over 2 weeks created for 2 modules for my school:
-* PRW3 (The API parts of the project)
-* AWA1 (The animation and design of the project)
- 
-I had another startpage previously, downloaded from /wg/ and slightly modified but it had some bugs. So one year after I had the idea to create a new one that fits me.
+## Basic Usage
 
-My Old Homepage
-![Old Homepage](http://i.imgur.com/OYN1EzQ.png "My old homepage")
+To go to a site, enter the corresponding key. To view the available sites and
+their keys, press `?`. If your input doesn't match any of the commands, a
+generic Google search will be triggered. For example:
 
-My New Homepage
-![New Homepage](http://i.imgur.com/VJqQdbA.png "My new homepage")
+- Entering `r` would redirect you to [www.reddit.com](https://www.reddit.com).
+- Entering `t` would redirect you to [twitch.tv](https://www.twitch.tv).
+- Entering `cats` would search
+  [Google for "cats"](https://encrypted.google.com/search?q=cats).
 
-You can see the difference there, I think.
+### Searching
 
-## The features in the new Homepage
+You can search a site by typing a colon after the site's key, followed
+by your search query. For example:
 
-### Left pannel
+- Entering `g:tilde` would search
+  [GitHub for "tilde"](https://github.com/search?q=tilde).
+- Entering `s:san holo` would search
+  [SoundCloud for "san holo"](https://soundcloud.com/search?q=san%20holo).
 
-![Left Pannel](http://i.imgur.com/6o01LXB.png "Left pannel")
+### Specific Paths
 
-The left pannel show greetings and your current time and weather (editable)
+You can go to a specific path on a site by typing a forward slash after the
+site's key, followed by the location on the site you'd like to be redirected to.
+For example:
 
-### Mid pannel
+- Entering `r/r/startpages` would redirect you to
+  [www.reddit.com/r/startpages](https://www.reddit.com/r/startpages)
+- Entering `h/popular` would redirect you to
+  [hypem.com/popular](http://hypem.com/popular).
 
-![Mid Pannel](http://i.imgur.com/A5ieCPV.png "Mid pannel")
+### Specific Sites
 
-The middle pannel show the search bar (customizable) and your favorites and also the CFF schedule called with the terminal
+If you enter in a full domain or URL, you will be redirected to said domain or
+URL. For example:
 
-## Right pannel
+- Entering `stallman.org` would redirect you to
+  [stallman.org](https://stallman.org/).
+- Entering `https://smile.amazon.com` would redirect you to
+  [smile.amazon.com](https://smile.amazon.com/).
 
-![Right Pannel](http://i.imgur.com/wrOn2kA.png "Right pannel")
+## Configuration
 
-The right pannel is where the terminal is and also the RSS flux pannel
+The above is just the beginning. Open up the [index.html](index.html) file and
+read through the `CONFIG`!
 
-# Customization
+## License
 
-You can simply edit the parameters of the app inside the var.js file
-
-![Edit parameters](http://i.imgur.com/aO40n05.png "Your config goes here")
-
-# Soundcloud 
-
-It's really simple to use it. There's a help inside the terminal.
-
-[Get your custom app identification](http://soundcloud.com/you/apps/)
-
-This version requires you to login each time you want to use Soundcloud, it's because there's no need of a PHP server.
-
-# How to use it ?
-
-## The left pannel
-
-The left pannel is pretty much self explained, there's no ambiguous way to use it because there's no way to actually use it.
-
-## The mid pannel
-
-### The search bar
-
-Simply add "!<the letter>" to search something, if you don't put "!" you will search on the first searchengine.
-
-### The bookmarks 
-
-Just click on the link or the shortcut
-
-## The right pannel
-
-### Terminal
-
-There's many command on the terminal, but you will use the "f <shortcut>" to open the bookmark wanted. Everything else is in the help of each fonction.
-
-### RSS board
-
-Simply click on the link to open the article
-
-# Next version
-I don't have any more ideas or maybe 1 or 2 like Riot Games api for games but I will see if I have the time to do it. So you can send me your recommendations inside the issues part of the project.
+[The Lato typeface](https://www.latofonts.com/lato-free-fonts/) has
+[its own license](https://github.com/cadejscroggins/tilde/blob/master/fonts/LICENSE).
+You can use and modify everything else [however you like](https://github.com/cadejscroggins/tilde/blob/master/LICENSE).
